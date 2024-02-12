@@ -28,13 +28,13 @@ void Monitor()
 
             foreach (ISensor sensor in subhardware.Sensors)
             {
-                Console.WriteLine("\t\t{0}: {1}", sensor.Name, sensor.Value);
+                Console.WriteLine("\t{0}: {1} {2}", sensor.Name, sensor.Value, sensor.SensorType);
             }
         }
 
         foreach (ISensor sensor in hardware.Sensors)
         {
-            Console.WriteLine("\t{0}: {1}", sensor.Name, sensor.Value);
+            Console.WriteLine("\t{0}: {1} {2}", sensor.Name, sensor.Value, sensor.SensorType);
         }
     }
 
