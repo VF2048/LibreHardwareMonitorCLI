@@ -12,7 +12,9 @@ void Monitor()
         IsMotherboardEnabled = true,
         IsControllerEnabled = true,
         IsNetworkEnabled = true,
-        IsStorageEnabled = true
+        IsStorageEnabled = true,
+        IsBatteryEnabled = true,
+        IsPsuEnabled = true,
     };
 
     computer.Open();
